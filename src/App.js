@@ -1,10 +1,17 @@
 
+import { useState } from 'react';
 import './App.css';
+import Header from './components/header/Header';
+import AsteroidBody from './components/asteroid-body/AsteroidBody';
 
 function App() {
+
+
+ 
   return (
     <div className="App">
-      <h1>awishcar</h1>
+     <Header/>
+     <AsteroidBody/>
     </div>
   );
 }
