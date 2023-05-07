@@ -12,7 +12,7 @@ setFastestChartData({
   datasets: [
     {
       label: "Asteroids Datasets",
-      data:fastestData,
+      data: fastestData,
       backgroundColor: "white",
       color: "white",
       borderColor: "blue",
@@ -21,6 +21,11 @@ setFastestChartData({
       pointRadius: "5",
       pointBorderColor: "white",
       pointBackgroundColor: "blue",
+      fill: {
+        target: "origin",
+        above: "rgb(191, 216, 238)",
+        below: "#000000",
+      },
     },
   ],
 });

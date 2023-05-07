@@ -15,6 +15,7 @@ import {
   Title,
   Tooltip,
   Legend,
+  Filler,
 } from "chart.js";
 ChartJS.register(
   CategoryScale,
@@ -23,7 +24,8 @@ ChartJS.register(
   LineElement,
   Title,
   Tooltip,
-  Legend
+  Legend,
+  Filler
 );
 
 
@@ -101,11 +103,14 @@ function AsteroidBody() {
   const styleLineGraph = {
     backgroundColor: "white",
     color: "black",
-    padding: "20px",
-    width: "90vw",
+    padding: "10px 20px",
+    width: "80vw",
+    minHeight:"70vh",
     margin: "40px auto ",
     display: "flex",
     flexDirection: "column",
+    alignItems:"center",
+    justifyContent:"center",
     gap: "40px",
   };
   function fetchData() {
@@ -139,9 +144,8 @@ function AsteroidBody() {
       <div
         style={{
           color: "white",
-          padding: "20px",
-          width: "90vw",
-          margin: "40px auto ",
+          maxWidth: "90vw",
+          margin: "10px auto ",
           display: "flex",
           flexDirection: "column",
           gap: "20px",
@@ -156,7 +160,7 @@ function AsteroidBody() {
           <Line data={fastestChartData} />
         </div>
         <div style={styleLineGraph}>
-          <h1>Closest Asteroids VS Each Day</h1>
+          <h3>Closest Asteroids VS Each Day</h3>
           <Line data={closestChartData} />
         </div>
         <div style={styleLineGraph}>

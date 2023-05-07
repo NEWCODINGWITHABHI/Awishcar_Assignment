@@ -17,7 +17,7 @@ function setClosestChartFunction(setClosestChartData,labels,data){
       datasets: [
         {
           label: "Asteroids Datasets",
-          data:closestData,
+          data: closestData,
           backgroundColor: "white",
           color: "white",
           borderColor: "blue",
@@ -26,6 +26,11 @@ function setClosestChartFunction(setClosestChartData,labels,data){
           pointRadius: "5",
           pointBorderColor: "white",
           pointBackgroundColor: "blue",
+          fill: {
+            target: "origin",
+            above: "rgb(191, 216, 238)",
+            below: "#000000",
+          },
         },
       ],
     });

@@ -8,18 +8,8 @@
     gap: 20px;
     overflow: hidden !important;
 }
-/* .input-and-button label{
-    display: block;
-    text-align: left;
-    font-size: 20px;
-    font-weight: bold;
-} */
-/* .input-and-button input{
-    padding: 10px 20px;
-    font-size: 20px;
-    margin-top: 5px;
-    cursor: pointer;
-} */
+
+
 .date-picker-box{
     background-color: aliceblue;
     padding: 20px 20px;
@@ -32,7 +22,15 @@
     font-size: 20px;
 }
 .date-picker{
-    /* background-color: white; */
     display: flex;
     gap: 20px;
+}
+button{
+    background-color: rgb(45, 206, 8);
+    color: white;
+    cursor: pointer;
+}
+h3{
+    color:green;
+    font-weight: bold;
 }
