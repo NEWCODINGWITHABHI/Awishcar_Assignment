@@ -9,7 +9,7 @@ export default function DatePickerValue({ dateLabel, setDate, date }) {
 
   function changeDate(newValue) {
     let d = newValue.$D;
-    let m = newValue.$M;
+    let m = newValue.$M+1;
     let y = newValue.$y;
     if (d < 10) {
       d = "0" + d;

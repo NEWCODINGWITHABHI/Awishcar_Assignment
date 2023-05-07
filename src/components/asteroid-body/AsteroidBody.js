@@ -97,7 +97,7 @@ function AsteroidBody() {
   useEffect(() => {
     getAsteroidData();
   }, []);
-  console.log(startDate, endDate);
+
   const styleLineGraph = {
     backgroundColor: "white",
     color: "black",
